@@ -1,34 +1,34 @@
-const TAXA_IMPOSTO = 0.08
-const PRECO_CELL = 99.99
-const PRECO_ACESSORIO = 9.99
-const LIMITE_GASTOS = 200
+const TAX_RATE = 0.08
+const CELL_PRICE = 99.99
+const ACESSORY_PRICE = 9.99
+const SPENDING_LIMIT = 200
 
-var saldo_bancario = 303.91
-var compra = 0
+var bankBalance = 303.91
+var purchase = 0
 
-function taxa(valor){
-   valor = valor + valor * TAXA_IMPOSTO
-   return valor
+function tax(amount){
+   amount = amount + amount * TAX_RATE
+   return amount
 }
 
-function format(valor){
-   return "$" + valor.toFixed(2)
+function format(amount){
+   return "$" + amount.toFixed(2)
 }
 
 
-while(compra < saldo_bancario){
-   compra = compra + PRECO_CELL
+while(purchase < bankBalance){
+   purchase = purchase + CELL_PRICE
 
-   if(compra < LIMITE_GASTOS){
-      compra = compra + PRECO_ACESSORIO
+   if(purchase < SPENDING_LIMIT){
+      purchase = purchase + ACESSORY_PRICE
    }
 }
 
-compra = taxa(compra)
+purchase = tax(purchase)
 
-console.log('Sua compra: ' + format(compra))
+console.log('Sua compra: ' + format(purchase))
 
-if(compra > saldo_bancario){
+if(purchase > bankBalance){
    console.log('Você não pode pagar a conta.')
 }
 

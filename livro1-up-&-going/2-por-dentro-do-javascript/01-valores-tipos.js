@@ -8,7 +8,7 @@
 
 
 
-//O JavaScript dispõe de um operador typeofque pode examinar um valor e dizer a você qual é o tipo informado:
+//O JavaScript dispõe de um operador typeof que pode examinar um valor e dizer a você qual é o tipo informado:
 
 var a;
 typeof a;               // "undefined"
@@ -30,3 +30,5 @@ typeof a;               // "undefined"
 
 a = { b: "c" };
 typeof a;               // "object"
+
+// Apenas valores possuem tipos em Js, variáveis são apenas containers para esses valores
