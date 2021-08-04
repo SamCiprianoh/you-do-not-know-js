@@ -8,7 +8,7 @@
 
 
 "I am a string"; //Literal strings
-'I am also a string';//Literail strings
+'I am also a string';//Literal strings
 
 42;//Literal number
 
