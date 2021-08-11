@@ -36,7 +36,7 @@ a = b * 2 // Essa instrução tem quantro expressões dentro dela
 // 1ª) 2 é uma expressão de valor literal
 // 2ª) b é uma expressão de valor variável
 // 3ª) a * 2 é uma expressão aritmética
-// 4ª) a = b * 2 é uma expressão de atribuição, significa designar o resultado da expressão b * 2 para a variável a]
+// 4ª) a = b * 2 é uma expressão de atribuição, significa designar o resultado da expressão b * 2 para a variável a
 
 
 // Uma instrução de expressão mais comum é chamada 'instrução de expressão de chamada', sendo a própria chamada da função uma instrução completa
